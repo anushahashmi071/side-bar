@@ -1,4 +1,10 @@
 @media only screen and (max-width: 1025px) {
+    .container {
+        max-width: 100%;
+        margin: 5%;
+        padding-left: 20%;
+    }
+
     .sec-img {
         min-height: 18%;
         margin: 30px 35px;
@@ -7,48 +13,48 @@
 
 @media only screen and (max-width: 769px) {
     .sec-img {
-        min-height: 10%;
-        margin: 30px 27px;
+        display: none;
     }
 
-    .content {
-        transform: translate(30%, 15%);
+    .container {
+        padding-left: 0;
     }
-}
 
-@media only screen and (max-width: 668px) {
     h2 {
         opacity: 1;
         margin: 0;
         padding: 10px;
-        background-color: #ff4400f3;
+        background-color: var(--primary-color);
         color: #fff;
         z-index: 2;
         position: relative;
+        text-transform: capitalize;
+        font-size: 20px;
     }
-    
+
     .sec-header {
         position: absolute;
         left: 0;
         top: 0;
         right: 0;
         width: 100%;
-        height: 85%;
+        height: 30%;
         padding-top: 8%;
         transform: translateY(-265px);
         z-index: 1;
         transition: all ease-in-out 0.5s;
+        align-items: start;
     }
 
     .open-toggle {
         position: absolute;
-        top: 20px;
+        top: 10px;
         right: 15px;
-        height: 25px;
-        width: 30px;
+        height: 30px;
+        width: 40px;
         z-index: 3;
         cursor: pointer;
-        border: 1px solid #fff;
+        border: 3px solid #ffffff9c;
         border-radius: 5px;
         padding: 4px;
     }
@@ -81,34 +87,31 @@
     .spinner.bottom {
         margin-top: 3px;
     }
-
     .sec-header ul {
         padding: 10px;
-        text-align: center;
         gap: 15px;
+        text-align: start;
     }
-
-    .sec-img {
-        display: none;
-    }
-
-    .content {
-        transform: translate(10%, 15%);
-    }
-
     .info ul {
         flex-wrap: wrap;
         column-gap: 25px;
     }
 }
 
-@media only screen and (max-width: 376px) {
-    .sec-header {
-        transform: translateY(-470px);
-        height: 45%;
+@media only screen and (max-width: 668px) {
+    .sec-content h6{
+        display: none;
     }
+    .heading-6{
+        opacity: 1;
+    }
+    .sec-header{
+        height: 70%;
+    }
+}
 
-    .content {
-        transform: translate(10%, 5%);
+@media only screen and (max-width: 376px) {
+    .sec-header{
+        height: 40%;
     }
 }
