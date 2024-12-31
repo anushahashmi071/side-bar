@@ -21,7 +21,7 @@
     }
 
     h2 {
-        opacity: 1;
+        display: block;
         margin: 0;
         padding: 10px;
         background-color: var(--primary-color);
