@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -23,10 +27,9 @@ body {
 .container {
     max-width: 1140px;
     padding-left: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
     margin: auto;
-    height: 100vh;
 }
 
 hr {
